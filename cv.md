@@ -1,1 +1,1 @@
-Aliaksandr Prudnikau
+Aleksandr Prudnikov
