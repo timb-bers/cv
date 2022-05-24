@@ -45,7 +45,7 @@ function isPalindrome(str) {
     str = str.replaceAll(' ', '').toLowerCase();
     return str === [...str].reverse().join('');
 }
-console.log(ispalindrome('НАЖАЛ КАБАН НА БАКЛАЖАН'));
+console.log(isPalindrome('НАЖАЛ КАБАН НА БАКЛАЖАН'));
 ```
 ***
 *__Languages__*
