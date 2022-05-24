@@ -1,12 +1,14 @@
 # Aleksandr Prudnikov #
 ![my photo](https://avatars.githubusercontent.com/u/82755709?v=4)
 ***
+
 *__Contacts__*
 * __Location:__ Vitebsk, Republic of Belarus
 * __Phone:__ +375298183662
 * [GitHub](https://github.com/timb-bers)
 * __Email__: timberprud@gmail.com
 ***
+
 *__About Me__*
 
 My name is *Aleksandr*, im *26* years old. 
@@ -19,6 +21,7 @@ Studying at __RS School__ is a good start!
 > 
 > Francis Bacon.
 ***
+
 *__Skills__*
 1. HTML, BEM methodology
 2. CSS3/SASS
@@ -26,10 +29,12 @@ Studying at __RS School__ is a good start!
 4. Git and Gulp
 5. WordPress
 ***
+
 *__Work experience__*
 
 Nothing yet, to my great regret.
 ***
+
 *__Education and Courses__*
 * Vitebsk State College of Electrical Engineering
    * Operating a computer  
@@ -39,6 +44,7 @@ Nothing yet, to my great regret.
 * 0 to 1 video course
 * Vasiliev A.N. JavaScript in examples and tasks
 ***
+
 *__Code Examples__*
 ```
 function isPalindrome(str) {
@@ -48,6 +54,7 @@ function isPalindrome(str) {
 console.log(isPalindrome('НАЖАЛ КАБАН НА БАКЛАЖАН'));
 ```
 ***
+
 *__Languages__*
 
 * English (**A2**)
