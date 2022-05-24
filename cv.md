@@ -1,13 +1,13 @@
 # Aleksandr Prudnikov #
 ![my photo](https://avatars.githubusercontent.com/u/82755709?v=4)
-***
+********
 
 *__Contacts__*
 * __Location:__ Vitebsk, Republic of Belarus
 * __Phone:__ +375298183662
 * [GitHub](https://github.com/timb-bers)
 * __Email__: timberprud@gmail.com
-***
+********
 
 *__About Me__*
 
@@ -20,7 +20,7 @@ Studying at __RS School__ is a good start!
 > Knowledge itself is power!
 > 
 > Francis Bacon.
-***
+********
 
 *__Skills__*
 1. HTML, BEM methodology
@@ -28,12 +28,12 @@ Studying at __RS School__ is a good start!
 3. JavaScript and PHP Basic
 4. Git and Gulp
 5. WordPress
-***
+********
 
 *__Work experience__*
 
 Nothing yet, to my great regret.
-***
+********
 
 *__Education and Courses__*
 * Vitebsk State College of Electrical Engineering
@@ -43,7 +43,7 @@ Nothing yet, to my great regret.
 * CS50 video course
 * 0 to 1 video course
 * Vasiliev A.N. JavaScript in examples and tasks
-***
+********
 
 *__Code Examples__*
 ```
@@ -53,7 +53,7 @@ function isPalindrome(str) {
 }
 console.log(isPalindrome('НАЖАЛ КАБАН НА БАКЛАЖАН'));
 ```
-***
+********
 
 *__Languages__*
 
