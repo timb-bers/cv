@@ -1,12 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
-    <header>Hello World!</header>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__btn">
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list" id="listNav">
+            <li class="menu__item">
+              <a class="menu__link" href="#Contacts">
+                Contacts
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#About_me">
+                About me
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Languages">
+                Languages
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Skills">
+                Skills
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Work">
+                Work
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Education">
+                Education
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Courses">
+                Courses
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Hobbies">
+                Hobbies
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#Code">
+                Code
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__inner">
+        <section class="main-left">
+          <div class="main-left__img-inner">
+            <img class="main-left__img" src="images/my.jpg" alt="alex">
+          </div>
+          <div class="main-left__information">
+            <div class="main-left__title">
+              <h1 class="main-left__name">
+                Aleksandr <b>Prudnikov</b>
+              </h1>
+              <h2 class="main-left__job">
+                Junior Frontend Developer
+              </h2>
+            </div>
+            <div class="main-left__contacts" id="Contacts">
+              <ul class="main-left__contacts-list">
+                <li class="main-left__contacts-item">
+                  <a class="main-left__contacts-link--email" target="_blank" href="mailto:timberprud@gmail.com">
+                    timberprud@gmail.com
+                  </a>
+                </li>
+                <li class="main-left__contacts-item">
+                  <a class="main-left__contacts-link--phone" target="_blank" href="tel:+375298183662">
+                    +375 (29) 818-36-62
+                  </a>
+                </li>
+                <li class="main-left__contacts-item">
+                  <a class="main-left__contacts-link--location" target="_blank"
+                    href="https://www.google.com/maps/@55.1684366,30.2067188,13z">
+                    Vitebsk, Belarus
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-left__skills" id="Skills">
+              <h3 class="main-left__skills-title">Skills</h3>
+              <ul class="main-left__skills-list">
+                <li class="main-left__skills-item">HTML
+                </li>
+                <li class="main-left__skills-item">CSS3
+                </li>
+                <li class="main-left__skills-item">SASS
+                </li>
+                <li class="main-left__skills-item">JavaScript Basic
+                </li>
+                <li class="main-left__skills-item">PHP Basic
+                </li>
+                <li class="main-left__skills-item">Git
+                </li>
+                <li class="main-left__skills-item">Gulp
+                </li>
+                <li class="main-left__skills-item">WordPress
+                </li>
+                <li class="main-left__skills-item">BEM methodology
+                </li>
+                <li class="main-left__skills-item">Figma
+                </li>
+                <li class="main-left__skills-item">Adobe Photoshop
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="main-left__hobbies" id="Hobbies">
+              <h3 class="main-left__hobbies-title">Hobbies and Interests</h3>
+              <ul class="main-left__hobbies-list">
+                <li> Сoding </li>
+                <li> Books </li>
+                <li> Documentaries </li>
+                <li> Сomputer games </li>
+                <li> Footbal </li>
+                <li> American football </li>
+                <li> Coffee </li>
+                <li> Pizza </li>
+              </ul>
+            </div>
+
+            <div class='main-left__languages' id="Languages">
+              <h3 class="main-left__languages-title">Languages</h3>
+              <ul class="main-left__languages-list">
+                <li class="main-left__languages-item">English (A2)
+                </li>
+                <li class="main-left__languages-item">Deutch (A2)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-right">
+
+          <div class="main-right__about" id="About_me">
+            <h3 class="main-right__about-title">About me</h3>
+            <p class="main-right__about-text">
+              My name is Aleksandr, im 26 years old. I like to do coding and
+              create something of my own, something new. My goal at these
+              moment is to maximize my knowledge in this area for further
+              growth as an employee. Getting a good job in a stable and
+              developing company is my dream. Studying at RS School is a good
+              start!
+            </p>
+          </div>
+
+          <div class="main-right__work" id="Work">
+            <h3 class="main-right__work-title">Work experience</h3>
+            <p class="main-right__work-text">Nothing yet, to my great regret.
+            </p>
+          </div>
+
+          <div class="main-right__education" id="Education">
+            <h3 class="main-right__education-title">Education </h3>
+            <div class="main-right__education-inner">
+              <ul class="main-right__education-list">
+                <li class="main-right__education-item">
+                  <div class="div-info font-work markers-education">Operating a computer </div>
+                  <div class="div-info font-info">Vitebsk State College of Electrical Engineering</div>
+                  <div class="div-info font-info">2013 - 2016 </div>
+                </li>
+                <li class="main-right__education-item">
+                  <div class="div-info font-work markers-education">Software Engineer </div>
+                  <div class="div-info font-info">Vitebsk State University named after P.M. Masherov </div>
+                  <div class="div-info font-info">2018 - 2022 </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main-right__courses" id="Courses">
+            <h3 class="main-right__courses-title"> Courses </h3>
+            <div class="main-right__courses-inner">
+              <ul class="main-right__courses-list">
+                <li class="main-right__courses-item font-info markers">
+                  CS50 video course
+                </li>
+                <li class="main-right__courses-item font-info markers">
+                  0 to 1 video course
+                </li>
+                <li class="main-right__courses-item font-info markers">
+                  Vasiliev A.N. JavaScript in examples and tasks
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main-right__code" id="Code">
+            <h3 class="main-right__code-title">Code examples</h3>
+            <pre>
+              <code class = "main-right__code-text">function isPalindrome(str)<br>str = str.replaceAll(' ', '').toLowerCase();<br>return str === [...str].reverse().join('');<br>}<br><br>console.log(ispalindrome('НАЖАЛ КАБАН НА БАКЛАЖАН'));</code>
+            </pre>
+          </div>
+
+          <div class="main-right__quote" id="Quote">
+            <cite class="main-right__author"> Francis Bacon </cite>
+            <br>
+            <q class="main-right__quote-text"> Scientia est potentia </q>
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="footer__github-inner" target="_blank" href="https://github.com/timb-bers">
+          <img class="footer__github-logo" src="images/github_logo.svg" alt="this is github logo" />
+        </a>
+        <div class="footer__year font-work">
+          © 2022 by Alex Prudnikov
+        </div>
+        <a class="footer__rss" target="_blank" href="https://rs.school/js/">
+          <img class="footer__rs-school" src="images/rss.svg" alt="this is rs-school" />
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
