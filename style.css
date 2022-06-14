@@ -1,0 +1,738 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+pre,
+code {
+  margin: 0;
+}
+
+pre {
+  white-space: nowrap;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f2f4f3;
+  box-shadow: 20px 5px 90px 5px #3d3d3d;
+}
+
+.main__inner {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.header {
+  display: none;
+}
+
+.main-left {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.main-left__img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-left__img-inner {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.main-left__information {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.main-left__title {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-left__name {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.main-left__job {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.main-left__contacts {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-left__contacts-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.main-left__contacts-link--hub {
+  position: relative;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 25px;
+}
+
+.main-left__contacts-link--email {
+  position: relative;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 25px;
+}
+
+.main-left__contacts-link--phone {
+  position: relative;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 25px;
+}
+
+.main-left__contacts-link--location {
+  position: relative;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 25px;
+}
+
+.main-left__contacts-link--hub::before {
+  content: "";
+  background-image: url("images/hub.svg");
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.main-left__contacts-link--email::before {
+  content: "";
+  background-image: url("images/mail.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.main-left__contacts-link--phone::before {
+  content: "";
+  background-image: url("images/phone.svg");
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.main-left__contacts-link--location::before {
+  content: "";
+  background-image: url("images/marker.svg");
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.main-left__hobbies-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 0.5em;
+}
+
+.main-left__hobbies {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-left__hobbies-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.main-left__skills {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-left__skills-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 0.5em;
+}
+
+.main-left__skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.main-left__languages {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-left__languages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 0.5em;
+}
+
+.main-left__languages-item:first-child {
+  margin-bottom: 5px;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 70%;
+}
+
+.main-right__about {
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+}
+
+.main-right__about-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__about-text {
+  font-size: 20px;
+  color: #828282;
+  line-height: 40px;
+}
+
+.main-right__work {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-right__work-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__work-text {
+  font-size: 20px;
+  color: #828282;
+  line-height: 25px;
+}
+
+.main-right__education {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-right__education-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__education-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-right__education-item:nth-child(1) {
+  margin-bottom: 1em;
+}
+
+.div-info {
+  display: flex;
+  position: relative;
+  padding-left: 20px;
+}
+
+.div-info:nth-child(2) {
+  order: 1;
+}
+
+.font-work {
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.font-info {
+  font-size: 20px;
+  color: #828282;
+  line-height: 25px;
+}
+
+.markers::before {
+  content: "";
+  background: #3d3d3d;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+}
+
+.markers-education::before {
+  content: "";
+  background: #3d3d3d;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+}
+
+.main-right__courses {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-right__courses-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__courses-item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.main-right__courses-item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.main-right__code {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.main-right__code-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__code-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.main-right__quote {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  height: 100%;
+}
+
+.main-right__author {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 65px;
+  color: #4f4f4f;
+  padding-bottom: 0.5em;
+}
+
+.main-right__quote-text {
+  font-size: 40px;
+  color: #828282;
+  line-height: 45px;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.footer__rs-school {
+  display: block;
+  width: 144px;
+}
+
+.footer__github-logo {
+  width: 72px;
+}
+
+@media (max-width: 1070px) {
+  .main-left__hobbies-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main-left__skills-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-left__img-inner {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-left {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .header__inner {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .header__btn {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    z-index: 80;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  /* Отрисовали линии менюшки */
+  .header__btn::before,
+  .header__btn::after {
+    content: "";
+    position: absolute;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  /* Центральная линия меню */
+  .header__btn span {
+    position: absolute;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+    left: 0;
+  }
+
+  /* Расположение верхней и нижней линии */
+  .header__btn::before {
+    top: 0;
+  }
+
+  .header__btn::after {
+    bottom: 0;
+  }
+
+  /*  центрировали и вырованяли меню, зафиксировали что бы при прокрутке, оно всегда было перед глазами
+    максимально сдвинули вверх, а также добавили плавную анимацию появления. */
+  .menu {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: fixed;
+    top: -150%;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    background-color: #f2f4f3;
+    overflow: auto;
+  }
+
+  /* Вызываем меню с классом актив, для появления, т.е перезаписываем предыдущий топ */
+  .menu.active {
+    top: -13px;
+  }
+
+  .menu__list li {
+    padding: 10px 5px;
+  }
+
+  .menu__link {
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 5;
+    color: #3d3d3d;
+  }
+
+  .menu__link:hover {
+    background-color: #e7e9d0;
+  }
+
+  .main-right__education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .main-right__work-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-right__education-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-right__courses-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-right__code-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-right__work-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .font-info,
+  .font-work {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .main-right__code-text {
+    font-size: 12px;
+  }
+
+  .main-right__about-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .main-right__author {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .main-right__quote-text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__inner {
+    flex-direction: column;
+  }
+
+  .main-left {
+    width: 100%;
+  }
+
+  .main-right {
+    width: 100%;
+  }
+
+  .header__btn::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  .header__btn::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  .header__btn span {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 9px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-right__work-title,
+  .main-right__education-title,
+  .main-right__courses-title,
+  .main-right__code-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .main-right__code-text {
+    font-size: 16px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__github-inner,
+  .footer__year,
+  .footer__rs-school {
+    height: auto;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 490px) {
+  .main-right__author {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .main-right__quote-text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    min-width: 310px;
+  }
+}
