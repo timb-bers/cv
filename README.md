@@ -1,5 +1,5 @@
 # Markdown
 https://timb-bers.github.io/cv/cv
 
-# Моё резюме нуждающаеся в доработке)
+# Собственно моё резюме)
 https://timb-bers.github.io/cv/
