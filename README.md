@@ -1,5 +1,5 @@
 # Markdown
 https://timb-bers.github.io/cv/cv
 
-# My CV in gh-pages
+# Моё резюме нуждающаеся в доработке)
 https://timb-bers.github.io/cv/
